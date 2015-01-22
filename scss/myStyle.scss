@@ -1,0 +1,75 @@
+body,
+section,
+form,
+header,
+ul,
+li,
+input,
+button,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body {
+    font-size: 62.5%;
+}
+section.hero {
+    max-width: 100em;
+    margin: 0 auto;
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    h1 {
+        font-size: 4em;
+        color: white;
+        text-align: center;
+        padding-top: 3em;
+        clear: both;
+    }
+    h2 {
+        font-size: 2em;
+        color: white;
+        text-align: center;
+    }
+    form {
+        text-align: center;
+        padding-bottom: 20em;
+        input {
+            width: 20em;
+            height: 2em;
+            background: rgba(255, 255, 255, .8);
+        }
+        button {
+            width: 5em;
+            height: 2em;
+            background-color: skyblue;
+            padding: .5em;
+        }
+    }
+}
+section.hero header {
+    img {
+        float: left;
+        width: 150px;
+        margin: 1em 0 0 1em;
+    }
+    ul {
+        margin: 1em 1em 0 0;
+        float: right;
+        li {
+            font-size: 1.4em;
+            list-style: none;
+            float: left;
+            margin-left: 2em;
+            padding: .3em;
+            border-radius: 4px;
+        }
+        li:last-child {
+            border: 1px solid white;
+        }
+    }
+}
+::-webkit-input-placeholder {
+    color: grey;
+    padding-left: .5em;
+}
