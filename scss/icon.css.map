@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "icon.css",
+  "sources": [
+    "icon.scss"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EACI,OAAO;;;AAEX;EACI,OAAO;;;AAEX;EACI,OAAO;;;AAEX;EACI,OAAO;;;AAEX;EACI,OAAO;;;AAEX;EACI,OAAO",
+  "sourceRoot": ""
+}

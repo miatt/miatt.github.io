@@ -129,34 +129,169 @@ section.how-it-works {
     ol {
         margin-top: 5em;
         text-align: center;
+        
         li {
-            width: 30%;
+            width: 33.3%;
             list-style: none;
             float: left;
+            position: relative;
             div {
                 border: solid 1px black;
-                width: 2em;
-                height: 2em;
+                width: 3em;
+                height: 3em;
                 border-radius: 2em;
-                line-height: 2em;
+                line-height: 3em;
                 margin: 0 auto;
                 margin-bottom: 20px;
-                position: relative;
-                &:after {
-                    content: "";
-                    background: #ccc;
-                    height: 2px;
-                    width: 100%;
-                    margin: 0 auto;
-                    top: 1em;
-                    right: -2em;
-                    position: absolute;
-                }
-                //                &:last-child{
-                //                    display: none;
-                //                }
-
+            }
+            &:after {
+                content: "";
+                background: #ccc;
+                display: block;
+                height: 2px;
+                width: calc(100% - 3em);
+                margin-left: 1.5em;;
+                top: 1.5em;
+                left: 50%;
+                position: absolute;
+            }
+            &:last-child:after {
+                display: none;
             }
         }
     }
 }
+
+section.why-choose-us {
+    @include common-section;
+    text-align: center;
+    position: relative;
+    padding-bottom: 5em;
+    border-bottom: 2px solid #ccc;
+    h2:after {
+        content: "";
+        display: block;
+        background: #ccc;
+        width: 2em;
+        margin: 0 auto;
+        margin-top: .2em;
+        height: 2px;
+    }
+    ul{
+        margin-top: 5em;
+        -webkit-column-count: 2;
+        list-style: none;
+        li {
+            i{
+                float: left;
+                width: 20%;
+            }
+            span{
+                display: inline;
+                width: 80%;
+            }
+           
+//            float: left;
+        }
+    }
+    
+}
+
+section.people{
+    @include common-section;
+    text-align: center;
+        
+    ul.people-title{
+        margin: 5em 5em;
+        list-style: none;
+        padding-left: 30%;
+        li{
+            border: 1px solid grey;
+            
+            float:left;
+            width: 18em;
+            &:first-child{
+                background: lightgrey;
+            }
+        }
+    }
+    p{
+        font-size: 1.5em;
+    }
+    
+    h5{
+        font-size: 1.3em;
+    }
+    
+    ul.avatar{
+        text-align: center;
+        list-style: none;
+        margin-left: 25em;
+        li{
+            
+            img {
+                padding-left: 1em;
+            width: 5em;
+            height: 5em;
+            border-radius: 5em;
+                float: left;
+        }
+            
+        }
+        
+    }
+}
+
+footer{
+    background-image: url("../img/hero.png");
+    
+    form {
+        text-align: center;
+        padding: 5em 0;
+        input {
+            width: 20em;
+            height: 2em;
+            background: rgba(255, 255, 255, .8);
+        }
+        button {
+            width: 5em;
+            height: 2em;
+            background-color: skyblue;
+            padding: .5em;
+        }
+        h2{
+          display: inline;
+        }
+    }
+    ul{
+//        padding: .5em;
+        list-style: none;
+        li{
+            font-size: 1.5em;
+            float: left;
+            padding: .5em;
+        }
+    }
+    
+    
+}
+.icon-green{
+    color: green;
+}
+.icon-orange{
+    color: orange;
+}
+.icon-blue{
+    color: blue;
+}
+.icon-red{
+    color: red;
+}
+.icon-pink{
+    color: pink;
+}
+.icon-purple{
+    color: purple;
+}
+
+

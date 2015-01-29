@@ -125,30 +125,156 @@ section.how-it-works {
   section.how-it-works ol {
     margin-top: 5em;
     text-align: center; }
-    /* line 132, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    /* line 133, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
     section.how-it-works ol li {
-      width: 30%;
+      width: 33.3%;
       list-style: none;
-      float: left; }
-      /* line 136, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+      float: left;
+      position: relative; }
+      /* line 138, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
       section.how-it-works ol li div {
         border: solid 1px black;
-        width: 2em;
-        height: 2em;
+        width: 3em;
+        height: 3em;
         border-radius: 2em;
-        line-height: 2em;
+        line-height: 3em;
         margin: 0 auto;
-        margin-bottom: 20px;
-        position: relative; }
-        /* line 145, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
-        section.how-it-works ol li div:after {
-          content: "";
-          background: #ccc;
-          height: 2px;
-          width: 100%;
-          margin: 0 auto;
-          top: 1em;
-          right: -2em;
-          position: absolute; }
+        margin-bottom: 20px; }
+      /* line 147, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+      section.how-it-works ol li:after {
+        content: "";
+        background: #ccc;
+        display: block;
+        height: 2px;
+        width: calc(100% - 3em);
+        margin-left: 1.5em;
+        top: 1.5em;
+        left: 50%;
+        position: absolute; }
+      /* line 158, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+      section.how-it-works ol li:last-child:after {
+        display: none; }
+
+/* line 165, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+section.why-choose-us {
+  max-width: 100em;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  padding-bottom: 5em;
+  border-bottom: 2px solid #ccc; }
+  /* line 171, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+  section.why-choose-us h2:after {
+    content: "";
+    display: block;
+    background: #ccc;
+    width: 2em;
+    margin: 0 auto;
+    margin-top: 0.2em;
+    height: 2px; }
+  /* line 180, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+  section.why-choose-us ul {
+    margin-top: 5em;
+    -webkit-column-count: 2;
+    list-style: none; }
+    /* line 185, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    section.why-choose-us ul li i {
+      float: left;
+      width: 20%; }
+    /* line 189, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    section.why-choose-us ul li span {
+      display: inline;
+      width: 80%; }
+
+/* line 200, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+section.people {
+  max-width: 100em;
+  margin: 0 auto;
+  text-align: center; }
+  /* line 204, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+  section.people ul.people-title {
+    margin: 5em 5em;
+    list-style: none;
+    padding-left: 30%; }
+    /* line 208, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    section.people ul.people-title li {
+      border: 1px solid grey;
+      float: left;
+      width: 18em; }
+      /* line 213, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+      section.people ul.people-title li:first-child {
+        background: lightgrey; }
+  /* line 218, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+  section.people p {
+    font-size: 1.5em; }
+  /* line 222, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+  section.people h5 {
+    font-size: 1.3em; }
+  /* line 226, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+  section.people ul.avatar {
+    text-align: center;
+    list-style: none;
+    margin-left: 25em; }
+    /* line 232, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    section.people ul.avatar li img {
+      padding-left: 1em;
+      width: 5em;
+      height: 5em;
+      border-radius: 5em;
+      float: left; }
+
+/* line 245, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+footer {
+  background-image: url("../img/hero.png"); }
+  /* line 248, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+  footer form {
+    text-align: center;
+    padding: 5em 0; }
+    /* line 251, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    footer form input {
+      width: 20em;
+      height: 2em;
+      background: rgba(255, 255, 255, 0.8); }
+    /* line 256, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    footer form button {
+      width: 5em;
+      height: 2em;
+      background-color: skyblue;
+      padding: 0.5em; }
+    /* line 262, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    footer form h2 {
+      display: inline; }
+  /* line 266, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+  footer ul {
+    list-style: none; }
+    /* line 269, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+    footer ul li {
+      font-size: 1.5em;
+      float: left;
+      padding: 0.5em; }
+
+/* line 278, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+.icon-green {
+  color: green; }
+
+/* line 281, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+.icon-orange {
+  color: orange; }
+
+/* line 284, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+.icon-blue {
+  color: blue; }
+
+/* line 287, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+.icon-red {
+  color: red; }
+
+/* line 290, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+.icon-pink {
+  color: pink; }
+
+/* line 293, /Users/Tanny/Desktop/miatt.github.io/scss/myStyle.scss */
+.icon-purple {
+  color: purple; }
 
 /*# sourceMappingURL=myStyle.css.map */
