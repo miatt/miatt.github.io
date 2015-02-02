@@ -15,11 +15,15 @@
   color: red; }
 
 /* line 13, /Users/Tanny/Desktop/miatt.github.io/scss/icon.scss */
-.icon-pink {
-  color: pink; }
+.icon-deeppink {
+  color: deeppink; }
 
 /* line 16, /Users/Tanny/Desktop/miatt.github.io/scss/icon.scss */
 .icon-purple {
   color: purple; }
+
+/* line 20, /Users/Tanny/Desktop/miatt.github.io/scss/icon.scss */
+.icon-quote-grey {
+  color: gainsboro; }
 
 /*# sourceMappingURL=icon.css.map */

@@ -117,7 +117,7 @@ section.how-it-works {
     text-align: center;
     padding-bottom: 5em;
     border-bottom: 2px solid #ccc;
-    h2:after {
+    h2: after {
         content: "";
         display: block;
         background: #ccc;
@@ -129,7 +129,6 @@ section.how-it-works {
     ol {
         margin-top: 5em;
         text-align: center;
-        
         li {
             width: 33.3%;
             list-style: none;
@@ -150,7 +149,8 @@ section.how-it-works {
                 display: block;
                 height: 2px;
                 width: calc(100% - 3em);
-                margin-left: 1.5em;;
+                margin-left: 1.5em;
+                ;
                 top: 1.5em;
                 left: 50%;
                 position: absolute;
@@ -161,14 +161,13 @@ section.how-it-works {
         }
     }
 }
-
 section.why-choose-us {
     @include common-section;
     text-align: center;
     position: relative;
     padding-bottom: 5em;
     border-bottom: 2px solid #ccc;
-    h2:after {
+    h2: after {
         content: "";
         display: block;
         background: #ccc;
@@ -177,74 +176,79 @@ section.why-choose-us {
         margin-top: .2em;
         height: 2px;
     }
-    ul{
+    ul {
         margin-top: 5em;
         -webkit-column-count: 2;
         list-style: none;
         li {
-            i{
+            i {
                 float: left;
                 width: 20%;
             }
-            span{
+            span {
                 display: inline;
                 width: 80%;
             }
-           
-//            float: left;
+            //            float: left;
+
         }
     }
-    
 }
-
-section.people{
+section.people {
     @include common-section;
     text-align: center;
-        
-    ul.people-title{
+    ul.people-title {
         margin: 5em 5em;
         list-style: none;
-        padding-left: 30%;
-        li{
+        width: 500px;
+        //        padding-left: 30%;
+        li {
             border: 1px solid grey;
-            
-            float:left;
+            float: left;
             width: 18em;
-            &:first-child{
+            &:first-child {
                 background: lightgrey;
             }
         }
     }
-    p{
+    p {
         font-size: 1.5em;
+        &:after {
+            content: "";
+            display: block;
+            background: #ccc;
+            width: 2em;
+            margin: 0 auto;
+            margin-top: .5em;
+            height: 2px;
+        }
     }
-    
-    h5{
+    h5 {
+        margin: 0;
         font-size: 1.3em;
     }
-    
-    ul.avatar{
-        text-align: center;
-        list-style: none;
-        margin-left: 25em;
-        li{
-            
-            img {
-                padding-left: 1em;
+    .john-title {
+        h5 {
+            margin: 5px 0;
+            color: lightgrey;
+        }
+    }
+    .avatar {
+        img {
             width: 5em;
             height: 5em;
+            display: inline-block;
             border-radius: 5em;
-                float: left;
-        }
+            padding: 5px;
             
         }
-        
+        .john-mayer {
+            border: 1px solid #ccc;
+        }
     }
 }
-
-footer{
+footer {
     background-image: url("../img/hero.png");
-    
     form {
         text-align: center;
         padding: 5em 0;
@@ -259,39 +263,17 @@ footer{
             background-color: skyblue;
             padding: .5em;
         }
-        h2{
-          display: inline;
+        h2 {
+            display: inline;
         }
     }
-    ul{
-//        padding: .5em;
+    ul {
+        //        padding: .5em;
         list-style: none;
-        li{
+        li {
             font-size: 1.5em;
             float: left;
             padding: .5em;
         }
     }
-    
-    
 }
-.icon-green{
-    color: green;
-}
-.icon-orange{
-    color: orange;
-}
-.icon-blue{
-    color: blue;
-}
-.icon-red{
-    color: red;
-}
-.icon-pink{
-    color: pink;
-}
-.icon-purple{
-    color: purple;
-}
-
-
